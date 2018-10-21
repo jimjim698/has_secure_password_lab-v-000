@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end 
   
   def create 
-    user = User.new(name: params[:username], password: params[:password])
+    user = User.new(name: params[:name], password: params[:password])
      user.save 
      session[:user_id] = user.id 
      redirect_to users_welcome_path
