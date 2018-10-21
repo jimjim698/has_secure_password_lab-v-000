@@ -12,6 +12,7 @@ class UsersController < ApplicationController
      redirect_to users_welcome_path
    else 
      redirect_to users_new_path
+   end 
   end 
   
   def welcome
