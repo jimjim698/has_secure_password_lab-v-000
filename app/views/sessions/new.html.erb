@@ -2,9 +2,9 @@
 
 <%=form_tag({controller: "sessions", action: "create", method: "post"}) do%>
 Usename:
-<input name= 'username'><br>
+<input name= 'user[username]'><br>
 Password:
-<input name= 'password'><br>
+<input name= 'user[password]'><br>
 <input type='submit' value='login'>
 <%end%>
 
