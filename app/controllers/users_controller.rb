@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end 
   
   def create 
-    user = User.new(name: params[:name], password: params[:password])
+    user = User.new(name: params[:user][:name], password: params[:user][:password])
     binding.pry 
      user.save 
      session[:user_id] = user.id 
